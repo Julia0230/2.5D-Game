@@ -8,7 +8,7 @@ public class IS_LevelManager : MonoBehaviour
     public Transform lastGoodCheckpoint;
     public Canvas infoBar;
     public Canvas messageBox;
-    public Text messageTextOnScreen;
+   public Text messageTextOnScreen;
     public Text statusText;
     public float timeOnScreen = 2.5f;
     private float timeComplete = 0;
@@ -23,12 +23,12 @@ public class IS_LevelManager : MonoBehaviour
         if(timeComplete < Time.time)
         {
             messageBox.gameObject.SetActive(false);
-        }
+       }
     }
     public void ShowMessage(string currentMessage)
     {
         messageTextOnScreen.text = currentMessage;
-        messageBox.gameObject.SetActive(true);
-        timeComplete = Time.time + timeOnScreen;
+    messageBox.gameObject.SetActive(true);
+       timeComplete = Time.time + timeOnScreen;
     }
 }
