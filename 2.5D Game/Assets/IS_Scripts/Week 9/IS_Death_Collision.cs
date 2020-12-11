@@ -19,7 +19,7 @@ private GameObject levelManager;
     { 
         if(respawn)
        { //grab the last good checkpoint
-        Transform respawnPoint = levelManager.GetComponent<IS_LevelManager>().lastGoodCheckpoint;
+        Transform respawnPoint = levelManager.GetComponent<IS_LevelManager2>().lastGoodCheckpoint;
 
         collidingPlayerCharater.transform.position = respawnPoint.position;
         //its done now turn it off
