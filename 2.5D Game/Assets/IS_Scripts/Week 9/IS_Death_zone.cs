@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class IS_Death_zone : MonoBehaviour
 {
-private bool respawn;
+public bool respawn;
 private GameObject collidingPlayerCharater;
 private GameObject levelManager;
 
